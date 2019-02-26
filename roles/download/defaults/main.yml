@@ -229,6 +229,9 @@ kubeadm_checksums:
     v1.10.0: ebbac985834289037b544523c3e2f39bb44bea938aca9d9e88ef7e880fb8472f
 
 etcd_binary_checksums:
+  # Etcd does not have arm32 builds at the moment, having some dummy value is
+  # required to avoid "no attribute"
+  arm: 0
   arm64: 7d3db622fb8d22a669a9351e1002ed2a7a776004a4a35888734bf39323889390
   amd64: 947849dbcfa13927c81236fb76a7c01d587bbab42ab1e807184cd91b026ebed7
 cni_binary_checksums:
